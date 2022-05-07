@@ -1,0 +1,262 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+/* dropdown animation */
+
+.mainmenu-nav .mainmenu li.has-menu-child-item > a {
+  padding-right: 12px;
+  margin-left: 100px;
+}
+
+.mainmenu-nav .mainmenu li {
+  position: relative;
+  margin: 0 10px;
+}
+
+.has-dropdown > a {
+  position: relative;
+}
+
+ul li, ol li {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+ul, li {
+  list-style: none;
+  padding-left: 0;
+}
+
+.has-dropdown > a::after {
+  content: "\ea4e";
+  position: absolute;
+  top: 50%;
+  font-family: "remixicon" !important;
+  right: -12px;
+  font-size: 22px;
+  transform: translateY(-50%);
+}
+
+.mainmenu-nav .mainmenu li a {
+  color: red;
+  font-weight: 500;
+  padding: 28px 12px;
+  font-size: 16px;
+  display: block;
+  border-radius: 3px;
+}
+.mainmenu-nav .mainmenu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.mainmenu-nav .mainmenu li a.active {
+  color: #ff512f;
+}
+
+ol ol, ol ul, ul ol, ul ul {
+  margin-bottom: 0;
+}
+
+.mainmenu-nav .mainmenu li .submenu {
+  min-width: 230px;
+  height: auto;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  z-index: 90;
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  padding: 12px 0;
+  transition: 0.3s;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+.mainmenu-nav .mainmenu li:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.mainmenu-nav .mainmenu li .submenu li a {
+  font-weight: 500;
+  padding: 6px 14px;
+  font-size: 15px;
+  color: white;
+  margin: 0 10px;
+  border-radius: 4px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainmenu-nav .mainmenu li .submenu li a:hover {
+  color: #ff512f;
+  margin-left: 5px;
+}
+
+.mainmenu-nav .mainmenu li .submenu li a.active {
+  color: #ff512f;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff512f;
+}
+
+@media (min-width: 1920px)
+{.fluid-header {
+    padding: 15px 172px;
+}}
+
+/* header */
+
+.header-fixed {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+body {
+    background: white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.header-fixed {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+.mainmenu-nav .mainmenu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Wallet Connect - Button  */
+.wallet-button .btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+.btn:hover {
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+a:hover {
+  text-decoration: none;
+  color: #0a58ca;
+}
+
+.btn-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(97.3deg, #dd2476 0%, #ff512f 100%);
+  transition: transform 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.btn-gradient:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.btn-gradient {
+  background: linear-gradient(97.3deg, #ff512f 0%, #dd2476 100%);
+}
+
+
+.btn span {
+  display: inline-flex;
+  z-index: 1;
+  line-height: 1;
+} 
+
+.btn-small {
+  font-size: 15px;
+  padding: 6px 25px;
+  height: 40px;
+  min-height: 40px;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  padding: 9px 35px;
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 50px;
+  height: 50px;
+  min-height: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn, button {
+  transition: 0.5s;
+}
+a, img, i {
+  transition: 0.3s;
+}
+img, video {
+  max-width: 100%;
+  height: 50px;
+}
+

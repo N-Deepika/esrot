@@ -1,0 +1,234 @@
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+   
+  }
+  
+  .modal.enter-done {
+    opacity: 1;
+    pointer-events: visible;
+  }
+  
+  .modal.exit {
+    opacity: 0;
+  }
+  
+  .modal-content {
+    width: 43%;
+    height: 80vh;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-200px);
+    display: block;
+  }
+  
+  .modal.enter-done .modal-content {
+    transform: translateY(0);
+  }
+  
+  .modal.exit .modal-content {
+    transform: translateY(-200px);
+  }
+  
+  .modal-header,
+  .modal-footer {
+    padding: 10px;
+    display: block;
+    border: none;
+  }
+  /* .modal-footer{
+    margin-top: 10%;
+  } */
+ 
+  
+  .modal-body {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
+  .modal-title{
+    text-align: center;
+    margin-right: 0 !important;
+    color: #313232;
+    font-weight: 300;
+    font-size: 3.5em;
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .modal-header p{
+    text-align: center;
+    font-size: 1.2em;
+    color: #979aa1;
+    font-weight: 200;
+    width: 40%;
+    margin-left: 30%;
+   
+  }
+
+
+  .login-btn{
+    margin-top: 30px;
+border-radius: 3px;
+background-color: #6e61b9;
+border: none;
+color:white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 1em  ;
+display: block;
+margin: auto;
+font-weight: 600;
+
+}
+
+.login-btn:hover{
+    background-color: rgb(226, 79, 140);
+}
+.closebtn{
+  float: right;
+}
+.loginfrom{
+  width: 80%;
+  margin: auto;
+  display: block;
+  background-color: white;
+  height: 3em;
+  border: 1px solid rgb(238, 236, 236);
+  margin-bottom: 3%;
+  padding:3%;
+
+}
+.radiobox{
+  display: flex;
+  justify-content: center;
+}
+.forg{
+  float: left;
+  margin-left: 6%;
+  margin-top: 2%;
+  color: #6e61b9;
+}
+.signup{
+  float: right;
+  color: #6e61b9;
+  margin-right: 6%;
+  margin-top: 2%;
+
+}
+
+.loginsmall{
+  width: 38%;
+  margin: auto;
+  display: inline-block;
+  background-color: white;
+  height: 3em;
+  border: 1px solid rgb(238, 236, 236);
+  margin-bottom: 3%;
+  padding:3%;
+
+}
+
+.modal-header2 p{
+  text-align: center;
+    font-size: 1.2em;
+    color: #979aa1;
+    font-weight: 200;
+    width: 100%;
+ 
+
+}
+
+.modal-header2,
+  .modal-footer {
+    padding: 10px;
+    display: block;
+    border: none;
+  }
+  /* .modal-footer{
+    margin-top: 10%;
+  } */
+
+
+  .first-left{
+    margin-left: 10%;
+    margin-right: 4%;
+      }
+ 
+       
+  .modal-content2 {
+    width: 43%;
+    height: 90vh;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-200px);
+    display: block;
+  }
+
+  .modal.enter-done .modal-content2 {
+    transform: translateY(0);
+  }
+  
+  .modal.exit .modal-content2 {
+    transform: translateY(-200px);
+  }
+
+  .modal-content3 {
+    width: 43%;
+    height: 80vh;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-200px);
+    display: block;
+  }
+
+  .modal.enter-done .modal-content3 {
+    transform: translateY(0);
+  }
+  
+  .modal.exit .modal-content3 {
+    transform: translateY(-200px);
+  }
+
+
+  .far{
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .loginfrom::placeholder { /* Most modern browsers support this now. */
+    color:#ccd1d1 ;
+ }
+
+
+ .lbl{
+   margin-right: 8%;
+   margin-left: -10%;
+ }
+
+ .forg1{
+  float: left;
+  margin-left: 6%;
+  /* margin-top: 2%; */
+  color: #6e61b9;
+
+ }
+
+ .modal-title1{
+  text-align: center;
+  margin-right: 0 !important;
+  color: #313232;
+  font-weight: 300;
+  font-size: 3.5em;
+  width: 100%;
+  margin-top: 5%;
+
+ }
